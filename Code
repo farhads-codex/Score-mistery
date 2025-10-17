@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int num, score = 0;
+    while(1)
+    {
+        cout << "\nEnter a number to increase your score.";
+        cin >> num;
+        
+        if (num % 2 == 0)
+        {
+            cout << "\nWell done!\nYour score is increased by : " << num;
+            score += num;
+        }else
+        {
+            cout << "\nGood Bye!" ;
+            cout << "\nYour final score is : " << score;
+            break;
+        }
+    
+    }
+    return 0;
+}
